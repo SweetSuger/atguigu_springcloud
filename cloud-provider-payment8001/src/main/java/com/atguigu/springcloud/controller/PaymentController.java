@@ -17,7 +17,7 @@ public class PaymentController {
     @Autowired
     private PaymentService paymentService;
 
-    @PostMapping(value = "/payment/insertPayment")
+    @PostMapping(value = "/payment/create")
     public CommonResult insertPayment(@RequestBody Payment payment){
         int result = paymentService.insertPayment(payment);
         log.info("=============插入结果====="+result);
