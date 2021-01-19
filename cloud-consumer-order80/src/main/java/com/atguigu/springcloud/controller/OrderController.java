@@ -29,7 +29,7 @@ public class OrderController {
 
     @GetMapping("/consumer/payment/get/{id}")
     public CommonResult<Payment> getPayment(@PathVariable("id") Integer id){
-        System.out.println("查询热部署测试1");
+        System.out.println("查询热部署测试2");
         return restTemplate.getForObject(PAYMENT_URL+"/payment/get/"+id,CommonResult.class);
     }
 }
