@@ -9,12 +9,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Created by yh on 2020/12/29.
+ * @author yinhao
+ * @date 2021/1/20 18:41
  */
 @Slf4j
 @RestController
 public class PaymentController {
-
     @Autowired
     private PaymentService paymentService;
 
