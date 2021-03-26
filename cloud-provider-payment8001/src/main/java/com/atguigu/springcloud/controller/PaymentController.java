@@ -65,4 +65,13 @@ public class PaymentController {
 
         return this.discoveryClient;
     }
+
+    /**
+     * 手写负载均衡服务端接口
+     * @return
+     */
+    @GetMapping("/payment/lb")
+    public String getPaymentLB(){
+        return serverPort;
+    }
 }
